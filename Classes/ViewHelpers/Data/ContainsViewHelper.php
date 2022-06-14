@@ -7,7 +7,7 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 /**
  * Check, if an object storage contains an object
  */
-class ContainsViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper {
+class ContainsViewHelper extends \TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper {
 
     /**
      * @return void

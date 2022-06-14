@@ -22,12 +22,13 @@ use SaschaEnde\T3helpers\Utilities\Template;
 use SaschaEnde\T3helpers\Utilities\Tsfe;
 use SaschaEnde\T3helpers\Utilities\Upload;
 use SaschaEnde\T3helpers\Utilities\Uri;
+use TYPO3\CMS\Extbase\Annotation\Inject;
 
 class AbstractActionController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
 
     /**
      * @var BackendUser
-     * @inject
+     * @Inject
      */
     protected $BackendUser;
 
@@ -38,109 +39,109 @@ class AbstractActionController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
 
     /**
      * @var Configuration
-     * @inject
+     * @Inject
      */
     protected $Configuration;
 
     /**
      * @var Data
-     * @inject
+     * @Inject
      */
     protected $Data;
 
     /**
      * @var Datastorage
-     * @inject
+     * @Inject
      */
     protected $Datastorage;
 
     /**
      * @var Database
-     * @inject
+     * @Inject
      */
     protected $Database;
 
     /**
      * @var Debug
-     * @inject
+     * @Inject
      */
     protected $Debug;
 
     /**
      * @var Filesystem
-     * @inject
+     * @Inject
      */
     protected $Filesystem;
 
     /**
      * @var Google
-     * @inject
+     * @Inject
      */
     protected $Google;
 
     /**
      * @var Injections
-     * @inject
+     * @Inject
      */
     protected $Injections;
 
     /**
      * @var Language
-     * @inject
+     * @Inject
      */
     protected $Language;
 
     /**
      * @var Mail
-     * @inject
+     * @Inject
      */
     protected $Mail;
 
     /**
      * @var Password
-     * @inject
+     * @Inject
      */
     protected $Password;
 
     /**
      * @var Session
-     * @inject
+     * @Inject
      */
     protected $Session;
 
     /**
      * @var Settings
-     * @inject
+     * @Inject
      */
     protected $Settings;
 
     /**
      * @var Template
-     * @inject
+     * @Inject
      */
     protected $Template;
 
     /**
      * @var Upload
-     * @inject
+     * @Inject
      */
     protected $Upload;
 
     /**
      * @var Uri
-     * @inject
+     * @Inject
      */
     protected $Uri;
 
     /**
      * @var Page
-     * @inject
+     * @Inject
      */
     protected $Page;
 
     /**
      * @var Tsfe
-     * @inject
+     * @Inject
      */
     protected $Tsfe;
 

@@ -2,7 +2,7 @@
 
 namespace SaschaEnde\T3helpers\ViewHelpers\Page;
 
-class SeoViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper {
+class SeoViewHelper extends \TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper {
 
     /**
      * @param $tag title|og:image|og:title|og:type|og:url|og:description|fp:app_id|og:site_name

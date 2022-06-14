@@ -135,7 +135,8 @@ class Upload implements SingletonInterface {
             if($target_folder == false){
                 $results[] = GeneralUtility::upload_to_tempfile($file['targetFilename']);
             }else{
-                $results[] = GeneralUtility::upload_copy_move($file['tmp_name'], PATH_site . '/fileadmin/' . $target_folder . '/' . $file['targetFilename']);
+                // $results[] = GeneralUtility::upload_copy_move($file['tmp_name'], PATH_site . '/fileadmin/' . $target_folder . '/' . $file['targetFilename']);
+                $results[] = GeneralUtility::upload_copy_move($file['tmp_name'], Environment::getPublicPath() . '/fileadmin/' . $target_folder . '/' . $file['targetFilename']);
 
                 // Ordner neu indexieren
                 $resourceFactory = \TYPO3\CMS\Core\Resource\ResourceFactory::getInstance();

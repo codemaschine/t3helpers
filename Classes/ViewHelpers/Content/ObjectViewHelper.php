@@ -26,14 +26,15 @@
 
 namespace SaschaEnde\T3helpers\ViewHelpers\Content;
 
-use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
+use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
+use TYPO3\CMS\Extbase\Annotation\Inject;
 
 
 class ObjectViewHelper extends AbstractViewHelper {
 
     /**
      * @var \SaschaEnde\T3helpers\Domain\Repository\ContentsRepository
-     * @inject
+     * @Inject
      */
     protected $contentsRepository;
 

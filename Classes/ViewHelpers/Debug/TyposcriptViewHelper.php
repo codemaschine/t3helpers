@@ -7,7 +7,7 @@ use t3h\t3h;
 /**
  * {namespace t3h=SaschaEnde\T3helpers\ViewHelpers}
  */
-class TyposcriptViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
+class TyposcriptViewHelper extends \TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper
 {
 
     /**

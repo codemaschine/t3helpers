@@ -2,7 +2,7 @@
 
 namespace SaschaEnde\T3helpers\ViewHelpers\Data;
 
-use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper;
+use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper;
 
 /**
  * {namespace t3h=SaschaEnde\T3helpers\ViewHelpers}

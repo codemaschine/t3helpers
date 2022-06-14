@@ -25,7 +25,8 @@ class ApidocsController extends ActionController {
         $docs = [];
 
         // Get files
-        $dir = PATH_typo3conf . 'ext/t3helpers/Classes/Utilities';
+        // $dir = PATH_typo3conf . 'ext/t3helpers/Classes/Utilities';
+        $dir = Environment::getPublicPath() . '/typo3conf/ext/t3helpers/Classes/Utilities';
         $files = scandir($dir);
 
         foreach ($files as $className) {
@@ -58,7 +59,8 @@ class ApidocsController extends ActionController {
                     }
 
                     // Example
-                    $exampleFile = PATH_typo3conf . 'ext/t3helpers/Documentation/Examples/'.$className.'_'.$reflectMethod->getName().'.phpexample';
+                    // $exampleFile = PATH_typo3conf . 'ext/t3helpers/Documentation/Examples/'.$className.'_'.$reflectMethod->getName().'.phpexample';
+                    $exampleFile = Environment::getPublicPath() . '/typo3conf/ext/t3helpers/Documentation/Examples/'.$className.'_'.$reflectMethod->getName().'.phpexample';
                     if(file_exists($exampleFile)){
                         $example = highlight_string(file_get_contents($exampleFile),true);
                         preg_match_all('/<code>(.*)<\/code>/ms', $example, $output_array);
@@ -96,7 +98,8 @@ class ApidocsController extends ActionController {
             }
 
             // Example
-            $exampleFile = PATH_typo3conf . 'ext/t3helpers/Documentation/Examples/'.$className.'.phpexample';
+            // $exampleFile = PATH_typo3conf . 'ext/t3helpers/Documentation/Examples/'.$className.'.phpexample';
+            $exampleFile = Environment::getPublicPath() . '/typo3conf/ext/t3helpers/Documentation/Examples/'.$className.'.phpexample';
             if(file_exists($exampleFile)){
                 $example = highlight_string(file_get_contents($exampleFile),true);
                 preg_match_all('/<code>(.*)<\/code>/ms', $example, $output_array);

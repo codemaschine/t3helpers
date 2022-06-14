@@ -27,6 +27,7 @@
 namespace SaschaEnde\T3helpers\Domain\Model;
 
 use \TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
+use TYPO3\CMS\Extbase\Annotation\ORM\Lazy;
 
 class Pages extends AbstractEntity {
 
@@ -37,7 +38,7 @@ class Pages extends AbstractEntity {
 
     /**
      * @var int
-     * @lazy
+     * @Lazy
      */
     protected $pid;
 

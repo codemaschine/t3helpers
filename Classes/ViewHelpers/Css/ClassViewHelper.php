@@ -7,7 +7,7 @@ use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 /**
  * {namespace t3h=SaschaEnde\T3helpers\ViewHelpers}
  */
-class ClassViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
+class ClassViewHelper extends \TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper
 {
 
     /**
